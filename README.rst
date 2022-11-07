@@ -1,29 +1,14 @@
-Google Images Download
+Google 圖片下載
 ######################
 
-Python Script for 'searching' and 'downloading' hundreds of Google images to the local hard disk!
-
-Documentation
+Step1. cd google_images_download
 =============
 
-* `Documentation Homepage <https://google-images-download.readthedocs.io/en/latest/index.html>`__
-* `Installation <https://google-images-download.readthedocs.io/en/latest/installation.html>`__
-* `Input arguments <https://google-images-download.readthedocs.io/en/latest/arguments.html>`__
-* `Examples and Code Samples <https://google-images-download.readthedocs.io/en/latest/examples.html#>`__
+example1 . 指令限制200張 並調用chromedriver
+python google_images_download.py -k "cucumbet plant in farm" -l 200 --chromedriver="C:/chromedriver"
 
-
-Disclaimer
 ==========
 
-This program lets you download tons of images from Google.
-Please do not download or use any image that violates its copyright terms.
-Google Images is a search engine that merely indexes images and allows you to find them.
-It does NOT produce its own images and, as such, it doesn't own copyright on any of them.
-The original creators of the images own the copyrights.
+範例2: 指定限制200張 調用 chromedriver 並限制只取jpg 且指定google url圖片頁面下載連結
 
-Images published in the United States are automatically copyrighted by their owners,
-even if they do not explicitly carry a copyright warning.
-You may not reproduce copyright images without their owner'self permission,
-except in "fair use" cases,
-or you could risk running into lawyer'self warnings, cease-and-desist letters, and copyright suits.
-Please be very careful before its usage! Use this script/code only for educational purposes.
+python google_images_download.py -k "cucumbet plant in farm" -l 400 --chromedriver="C:/chromedriver" -f  "jpg" -u "https://www.google.ca/search?q=cucumber+plant+in+farm&tbm=isch&hl=en&authuser=0&sa=X&ved=2ahUKEwjS24rY6Zr7AhWSZt4KHXBRD4kQgowBKAB6BAgBEB4&biw=1269&bih=702" -is "test221107"
